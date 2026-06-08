@@ -21,10 +21,6 @@ pipeline {
                 }
             }
         }
-        stage ("Deploy") {
-            steps {
-                bat 'docker run -itd --name bus-app -p 2222:80 shaikmustafa/paytm:bus'
-            }
-        }
+    
     }
 }

@@ -22,10 +22,5 @@ pipeline {
             }
         }
         
-        stage ("Deploy") {
-            steps {
-                bat 'docker run -itd --name bank-app -p 1111:80 shaikmustafa/paytm:bank'
-            }
-        }
     }
 }

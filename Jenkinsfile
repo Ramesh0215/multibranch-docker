@@ -21,11 +21,5 @@ pipeline {
                 }
             }
         }
-        
-        stage ("Deploy") {
-            steps {
-                bat 'docker run -itd --name movie-app -p 3333:80 shaikmustafa/paytm:movie'
-            }
-        }
     }
 }
